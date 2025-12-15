@@ -32,3 +32,110 @@ body{
     max-width: 1120px;
     margin: 0 auto;
 }
+
+h1, h2{
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 120%;
+    color: var(--neutral-0);
+    margin-bottom: 24px;
+}
+
+h3, h4{
+    color:var(--neutral-0);
+    font-weight: 140%;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+h1 span{
+    color: var(--cyan-400)
+}
+
+.nav{
+    padding:0 16px;
+    margin-top:32px;
+    display: flex;
+    justify-content: center;
+}
+/* hero section */
+
+.hero{
+    padding-top: 64px;
+    max-width: 100dvw;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 64px;
+}
+
+.hero .content{
+    padding: 0 16px;;
+    grid-column: span 2;
+    text-align: center;
+    gap:32px;
+}
+
+
+/*features section*/
+.features .container{
+    padding-top: 80px;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    gap:48px;
+    padding-inline:16px;
+    text-align: center;
+}
+
+.features .container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.features .container .card .img-wrapper{
+    background-color: var(--blue-800);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border-radius: 32px;
+    margin-bottom: 32px;
+}
+
+.features .container .card .img-wrapper img{
+    max-width: 65px;
+}
+
+/***Pricing section****/
+
+.pricing{
+    padding: 80px 16px;
+}
+
+.pricing .content{
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    gap: 80px;
+}
+
+.pricing .plan{
+    background-color: var(--blue-800);
+    border-radius: 8px;
+    padding: 48px 20px 32px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:24px;
+}
+
+.plan img{
+    max-width: 45px;
+}
