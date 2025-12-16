@@ -126,16 +126,69 @@ h1 span{
     gap: 80px;
 }
 
-.pricing .plan{
+.pricing .plans .plan{
     background-color: var(--blue-800);
     border-radius: 8px;
-    padding: 48px 20px 32px 20px;
+    padding: 48px 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap:24px;
+    position: relative;  
+}
+.pricing .plans .plan img{
+    max-width: 45px;
+    position:absolute;
+    bottom: 94%;
 }
 
-.plan img{
-    max-width: 45px;
+.pricing .plans .plan ul li{
+    padding: 12px;
 }
+
+.pricing .plans .plan ul li::marker{
+    content: "✓";
+    color: var(--cyan-400);
+}
+
+.pricing .plans .paid ul li::marker{
+    color: var(--blue-800);
+}
+
+.pricing .plans .free{
+    color: var(--neutral-0);
+}
+
+.pricing .plans .free p{
+    opacity: 60%;
+}
+.pricing .plans .plan span{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 140%;
+    vertical-align: middle;
+}
+
+
+.pricing .plans .paid{
+    background-color: var(--cyan-400);
+    color:var(--neutral-900);
+}
+.pricing .plans .paid p:first-of-type{
+    opacity: 60%;
+}
+
+.pricing .plans .paid h4{
+    color:var(--neutral-900)
+}
+
+.pricing .plans .paid span{
+    color: var(--neutral-900);
+}
+
+
+
+
+
+
+    
