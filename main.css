@@ -26,6 +26,7 @@ body{
     font-size: 15px;
     line-height: 160%;
     font-weight: 500;
+    padding-bottom: 64px;
 }
 
 .container{
@@ -69,12 +70,19 @@ h1 span{
     row-gap: 64px;
 }
 
-.hero .content{
+.hero .content {
     padding: 0 16px;;
     grid-column: span 2;
     text-align: center;
-    gap:32px;
 }
+
+.hero .content .mouse{
+    margin-top: 32px;
+    grid-column: span 2;
+    display: flex;
+    justify-content:center;
+}
+
 
 
 /*features section*/
@@ -139,7 +147,7 @@ h1 span{
 .pricing .plans .plan img{
     max-width: 45px;
     position:absolute;
-    bottom: 94%;
+    bottom: 95%;
 }
 
 .pricing .plans .plan ul li{
@@ -185,10 +193,59 @@ h1 span{
     opacity: 60%;
     font-size: 15px;
     margin-left: 8px;
+    font-weight: 500;
 }
 
+/*footer*/
+footer{
+    text-align: center;
+    padding-inline: 16px;
+    background-image: url(images/Path2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
+footer form{
+    margin-top: 40px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    margin-inline: 12px;
+    transition: all 0.5s ease-in-out;
+}
 
+footer form input, footer form button{
+    background-color: var(--blue-800);
+    border:none;
+    border-radius: 999px;
+    font-weight: 800;
+    padding: 12px 20px;
+}
+
+footer form input::placeholder{
+    color: var(--blue-gray);
+}
+
+footer form button{
+    background-color: var(--cyan-400);
+    color: var(--blue-800);
+}
+
+/*hovers*/
+footer form input:hover, footer form button:hover{
+    cursor: pointer;
+}
+
+footer form input:hover{
+    border: 1px solid var(--cyan-400);
+}
+
+footer form button:hover{
+    border: 2px solid var(--cyan-400);
+    background-color: var(--neutral-900);
+    color: var(--neutral-0);
+}
 
 
 
