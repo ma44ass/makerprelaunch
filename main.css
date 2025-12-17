@@ -26,7 +26,7 @@ body{
     font-size: 15px;
     line-height: 160%;
     font-weight: 500;
-    padding-bottom: 64px;
+    
 }
 
 .container{
@@ -170,6 +170,7 @@ h1 span{
 .pricing .plans .free p{
     opacity: 60%;
 }
+
 .pricing .plans .plan span{
     font-weight: 800;
     font-size: 40px;
@@ -181,6 +182,7 @@ h1 span{
     background-color: var(--cyan-400);
     color:var(--neutral-900);
 }
+
 .pricing .plans .paid p:first-of-type{
     opacity: 60%;
 }
@@ -204,6 +206,7 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: 50px;
 }
 
 footer form{
@@ -263,7 +266,6 @@ footer form button:hover{
 
     .hero .content{
         order: 2;
-    
     }
 
     .hero img:nth-of-type(2){
@@ -275,15 +277,16 @@ footer form button:hover{
         padding-inline: 32px;
         gap:32px;
     }
+
     .features .container .card{
         flex-direction: row;
         justify-content: flex-start;
-        
-        
     }
+
     .features .container .card:nth-last-of-type(even){
         padding-left: 48px;
     }
+
      .features .container .card .img-wrapper{
         max-width: 120px;
         margin-right: 48px;
@@ -309,6 +312,22 @@ footer form button:hover{
     .pricing .plans{
         margin-inline: 60px;
     }
+
+    /**Footer**/
+    footer{
+        padding-block: 50px;
+    }
+
+    footer form{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-inline: 70px;
+    }
+
+    footer form input{
+        flex: 1
+    }
+
 
 }
     
