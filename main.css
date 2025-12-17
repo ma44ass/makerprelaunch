@@ -151,7 +151,7 @@ h1 span{
 }
 
 .pricing .plans .plan ul li{
-    padding: 12px;
+    padding: 6px;
 }
 
 .pricing .plans .plan ul li::marker{
@@ -299,6 +299,15 @@ footer form button:hover{
 
     .features .container .card .content-wrapper p{
         max-width: 350px;
+    }
+
+    /**Pricing section**/
+    .pricing{
+        padding-inline: 80px;
+    }
+
+    .pricing .plans{
+        margin-inline: 60px;
     }
 
 }
