@@ -271,9 +271,14 @@ footer form button:hover{
     }
 
     /*FEATURES SECTION*/
+    .features .container{
+        padding-inline: 32px;
+        gap:32px;
+    }
     .features .container .card{
         flex-direction: row;
         justify-content: flex-start;
+        
         
     }
     .features .container .card:nth-last-of-type(even){
@@ -282,12 +287,14 @@ footer form button:hover{
      .features .container .card .img-wrapper{
         max-width: 120px;
         margin-right: 48px;
+        margin-bottom: 0;
     }
 
     .features .container .card .content-wrapper{
         display: flex;
         flex-direction: column;
         text-align: left;
+        gap:16px;
     }
 
     .features .container .card .content-wrapper p{
