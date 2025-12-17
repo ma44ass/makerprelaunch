@@ -246,7 +246,53 @@ footer form button:hover{
     background-color: var(--neutral-900);
     color: var(--neutral-0);
 }
+/**********************Media Queries***************************/
 
+@media screen and (min-width: 600px) and (max-width:768px){
+    .nav{
+        justify-content: flex-start;
+        padding-left: 32px;
+    }
+ /* hero*/
+  /*TODO: FIX !! */
+    .hero{
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows: unset;
+        gap:0
+    }
 
+    .hero .content{
+        order: 2;
+    
+    }
 
+    .hero img:nth-of-type(2){
+        order:3;
+    }
+
+    /*FEATURES SECTION*/
+    .features .container .card{
+        flex-direction: row;
+        justify-content: flex-start;
+        
+    }
+    .features .container .card:nth-last-of-type(even){
+        padding-left: 48px;
+    }
+     .features .container .card .img-wrapper{
+        max-width: 120px;
+        margin-right: 48px;
+    }
+
+    .features .container .card .content-wrapper{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .features .container .card .content-wrapper p{
+        max-width: 350px;
+    }
+
+}
     
