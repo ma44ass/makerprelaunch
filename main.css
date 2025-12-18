@@ -250,11 +250,12 @@ footer form button:hover{
     color: var(--neutral-0);
 }
 /**********************Media Queries***************************/
-
+/*tablet*/
 @media screen and (min-width: 600px) and (max-width:768px){
     .nav{
         justify-content: flex-start;
         padding-left: 32px;
+        
     }
  /* hero*/
   /*TODO: FIX !! */
@@ -266,6 +267,7 @@ footer form button:hover{
 
     .hero .content{
         order: 2;
+        background-image: url(/images/Path2.png);
     }
 
     .hero img:nth-of-type(2){
@@ -283,7 +285,7 @@ footer form button:hover{
         justify-content: flex-start;
     }
 
-    .features .container .card:nth-last-of-type(even){
+    .features .container .card:nth-of-type(even){
         padding-left: 48px;
     }
 
@@ -328,6 +330,95 @@ footer form button:hover{
         flex: 1
     }
 
+}
+
+/*Desktop*/
+@media only screen and (min-width: 768px){
+
+    .nav{
+        justify-content: left;
+        padding-left: 165px;
+        padding-block: 80px;
+    }
+    .hero{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: unset;
+        align-items: center;
+    }
+
+    .hero .content{
+        grid-column: span 2;
+        order:2;
+        background-image: url(/images/Path2.png);
+        
+    }
+
+    .hero > img{
+        width: 100%;
+        
+    }
+    .hero img:nth-child(2){
+        order: 3;
+    }
+
+
+    .features .container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: unset;
+    }
+
+    .features .container .card {
+        padding-bottom: 96px;
+        display: unset;
+        
+    }
+
+    .features .container .card .content-wrapper{
+        text-align: left;
+    }
+    .features .container .card:nth-of-type(even){
+        padding-top :48px;
+    }
+
+    /*Pricing section*/
+    .pricing .content{
+        max-width: 540px;
+        margin: 0 auto;
+    }
+     .pricing .plans{
+        display: flex;
+        justify-content: center;
+        gap:24px;
+        padding-inline: 260px;
+    }
+
+    .pricing .plans .free{
+        margin-block: 20px
+    }
+
+    .pricing .container .card {
+        max-width: 50%
+    }
+
+    /* footer*/
+    footer{
+        background-size: cover;
+        margin-top: 160px;
+        padding-block: 50px;
+    }
+    footer form{
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 448px;
+    }
+
+    footer form input{
+        flex: 1;
+    }
+
+    
+
+
 
 }
-    
