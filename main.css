@@ -311,7 +311,7 @@ footer form button:hover{
 
     .hero .content{
         order: 2;
-        background-image: url(/images/Path2.png);
+        background-image: url(images/Path2.png);
     }
 
     .hero img:nth-of-type(2){
@@ -396,7 +396,7 @@ footer form button:hover{
         align-items: center;
         grid-column: span 2;
         order:2;
-        background-image: url(/images/Path2.png);
+        background-image: url(images/Path2.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
