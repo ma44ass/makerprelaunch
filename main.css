@@ -5,8 +5,8 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 
 
 :root{
@@ -17,6 +17,10 @@
     --red-400 :#FF2965;
     --blue-800:#093F68;
     --blue-gray: #6B8CA4;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body{
@@ -44,7 +48,7 @@ h1, h2{
 
 h3, h4{
     color:var(--neutral-0);
-    font-weight: 140%;
+    font-weight: 800;
     font-size: 18px;
     margin-bottom: 12px;
 }
@@ -71,17 +75,55 @@ h1 span{
 }
 
 .hero .content {
-    padding: 0 16px;;
+    padding-inline: 16px;
     grid-column: span 2;
     text-align: center;
 }
 
-.hero .content .mouse{
-    margin-top: 32px;
-    grid-column: span 2;
-    display: flex;
-    justify-content:center;
+.hero .content .mouse-container{
+    padding-top: 32px;
+    max-width: 35px;
+    margin: 0 auto;
 }
+
+.hero .content .mouse{
+    display: block;
+    width: 30px;
+    height: 45px;
+    border: 2px solid var(--cyan-400);
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+
+.mouse::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--cyan-400);
+  border-radius: 50%;
+  left:50%;
+  transform: translate(-50%);
+  animation: scroll 3s infinite ease-out ;
+}
+ @keyframes scroll {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(30px);
+  }
+}
+
 
 
 
@@ -196,6 +238,7 @@ h1 span{
     font-size: 15px;
     margin-left: 8px;
     font-weight: 500;
+
 }
 
 /*footer*/
@@ -249,9 +292,10 @@ footer form button:hover{
     background-color: var(--neutral-900);
     color: var(--neutral-0);
 }
+
 /**********************Media Queries***************************/
 /*tablet*/
-@media screen and (min-width: 600px) and (max-width:768px){
+@media screen and (min-width: 600px) and (max-width:991px){
     .nav{
         justify-content: flex-start;
         padding-left: 32px;
@@ -308,7 +352,7 @@ footer form button:hover{
 
     /**Pricing section**/
     .pricing{
-        padding-inline: 80px;
+        padding-inline: 60px;
     }
 
     .pricing .plans{
@@ -333,7 +377,7 @@ footer form button:hover{
 }
 
 /*Desktop*/
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 992px){
 
     .nav{
         justify-content: left;
@@ -354,8 +398,8 @@ footer form button:hover{
         order:2;
         background-image: url(/images/Path2.png);
         background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: cover;
+        background-position: center;
+        background-size: contain;
         margin: 0 auto; 
     }
 
@@ -372,9 +416,10 @@ footer form button:hover{
     }
 
     .hero > img{
-        width: 95%;
+        width: 100%;
         
     }
+    
     .hero img:nth-child(2){
         order: 3;
     }
@@ -407,7 +452,9 @@ footer form button:hover{
         display: flex;
         justify-content: center;
         gap:24px;
-        padding-inline: 260px;
+        max-width: 800px;
+        margin: 0 auto;
+        padding-inline: 24px;
     }
 
     .pricing .plans .free{
