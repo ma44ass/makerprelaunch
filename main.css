@@ -344,17 +344,35 @@ footer form button:hover{
         grid-template-columns: repeat(4,1fr);
         grid-template-rows: unset;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 105px;
     }
 
     .hero .content{
+        align-items: center;
         grid-column: span 2;
         order:2;
         background-image: url(/images/Path2.png);
-        
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        margin: 0 auto; 
+    }
+
+    .hero .content h1{
+        font-size: 48px;
+    }
+
+    .hero .content p{
+        max-width: 540px;
+    }
+
+    .hero .content .mouse{
+        margin-top: 32px;
     }
 
     .hero > img{
-        width: 100%;
+        width: 95%;
         
     }
     .hero img:nth-child(2){
